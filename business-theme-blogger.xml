@@ -1,0 +1,2477 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html b:css='false' b:defaultwidgetversion='1' b:layoutsVersion='2' b:responsive='true' b:version='2' lang='es' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+
+<!-- Business v1.0.1 ?= Canvas.xml v1.3.63 | github.com/zkreations/canvas.xml -->
+<!-- Como usar Canvas.xml en blogger | tutorialblogger.org/p/curso-blogger.html -->
+
+<head>
+
+<!-- Datos generales -->
+<meta expr:charset='data:blog.encoding'/>
+<meta content='blogger' name='generator'/>
+<meta content='summary_large_image' name='twitter:card'/>
+<b:tag expr:content='data:view.isMultipleItems ? &quot;blog&quot; : &quot;article&quot;' name='meta' property='og:type'/>
+
+<!-- resources -->
+<script type='applijewelleryion/x-javascript'>
+addEventListener(&quot;load&quot;, function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+</script>
+
+<!-- bootstrap -->
+<link href='//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css' rel='stylesheet'/>
+
+<!-- bootstrap js -->
+<script crossorigin='anonymous' integrity='sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=' src='https://code.jquery.com/jquery-1.11.1.min.js'/>
+<script src='//maxcdn.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'/>
+
+<!-- fonts -->
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700' rel='stylesheet' type='text/css'/>
+<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
+<link href='//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' rel='stylesheet'/>
+
+<!-- Responsive viewport -->
+<meta content='width=device-width,minimum-scale=1,initial-scale=1' name='viewport'/>
+
+<!-- Datos personalizados del usuario -->
+<link href='https://plus.google.com/IDpaginaGoogle' rel='Publisher'/>
+<meta content='@blogger' name='twitter:site'/>
+<meta content='@google' name='twitter:creator'/>
+
+<!-- favicon -->
+<b:tag expr:href='data:blog.blogspotFaviconUrl' name='link' rel='icon' type='image/x-icon'/>
+
+<!-- Enlace Canonico -->
+<meta expr:content='data:blog.url.canonical' property='og:url'/>
+<meta expr:content='data:blog.url.canonical' name='twitter:url'/>
+<link expr:href='data:blog.url.canonical' rel='canonical'/>
+
+<!-- Descripcion -->
+<b:if cond='data:blog.metaDescription'>
+   <meta expr:content='data:blog.metaDescription' property='og:description'/>
+   <meta expr:content='data:blog.metaDescription' name='twitter:description'/>
+   <meta expr:content='data:blog.metaDescription' name='description'/>
+<b:elseif cond='data:view.isSingleItem'/>
+   <meta expr:content='data:blog.pageName + &quot; : Leer el articulo completo.&quot;' name='twitter:description'/>
+</b:if>
+
+<!-- Meta Robots Relativo -->
+<b:with value='data:view.isHomepage or data:view.isSingleItem ? &quot;index,follow&quot; : &quot;noindex,nofollow&quot;' var='pagefollow'>
+   <meta expr:content='data:blog.isMobile ? &quot;noindex,noarchive&quot; : data:pagefollow' name='robots'/>
+   <b:if cond='data:pagefollow == &quot;index,follow&quot;'>
+      <meta content='noodp,noydir' name='robots'/>
+   </b:if>
+</b:with>
+
+<!-- Optimizando Posts -->
+<b:if cond='data:view.isPost and data:blog.postImageUrl'>
+   <link expr:href='data:blog.postImageUrl' rel='image_src'/>
+   <meta expr:content='data:blog.postImageUrl' name='twitter:image'/>
+   <meta expr:content='data:blog.postImageUrl' property='og:image'/>
+</b:if>
+
+<!-- Optimizando Titulos -->
+<b:if cond='data:view.isError'>
+   <title>Error 404 en <data:blog.pageTitle/></title>
+<b:else/>
+   <b:with value='data:blog.pageName.length != 0 ? data:blog.pageName : data:blog.title' var='pageLength'>
+      <meta expr:content='data:pageLength' property='og:title'/>
+      <meta expr:content='data:pageLength' name='twitter:title'/>
+      <title><data:pageLength/></title>
+   </b:with>
+</b:if>
+
+<!-- feeds -->
+<b:tag cond='data:blog.feedLinks' expr:href='data:blog.homepageUrl.canonical path &quot;feeds/posts/default&quot; ' expr:title='data:blog.title + &quot; - Atom&quot;' name='link' rel='alternate' type='application/atom+xml'/>
+<b:tag cond='data:blog.feedLinks' expr:href='data:blog.homepageUrl.canonical path &quot;feeds/posts/default&quot; params {alt: &quot;rss&quot;}' expr:title='data:blog.title + &quot; - RSS&quot;' name='link' rel='alternate' type='application/rss+xml'/>
+
+<!-- schema ld+json -->
+<script type='application/ld+json'>
+{&quot;@context&quot;:&quot;http://schema.org&quot;,&quot;@type&quot;:&quot;WebSite&quot;,&quot;name&quot;:&quot;<data:blog.title/>&quot;,&quot;url&quot;:&quot;<data:blog.homepageUrl.canonical/>&quot;,&quot;potentialAction&quot;:{&quot;@type&quot;:&quot;SearchAction&quot;,&quot;target&quot;:&quot;<data:blog.homepageUrl.canonical/>search?q={search_term_string}&quot;,&quot;query-input&quot;:&quot;required name=search_term_string&quot;}}
+</script>
+
+<!--[if lt IE 9]>
+   <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<![endif]-->
+<!-- Fin de datos-->
+
+<style type='text/css'>/*<![CDATA[*/
+/* => CSS Global */
+/*--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
+html, body{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-size: 100%;
+	background: #e5e5e5;
+}
+body a,.grid_1,plan_1,plan_1.one,plan_1.two,i.icon1, i.icon2, i.icon3, i.icon4, i.icon5, i.icon6 {
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+a:hover{
+ text-decoration:none;
+}
+input[type="button"],input[type="submit"],li.parallelogram{
+	transition:0.5s all;
+	-webkit-transition:0.5s all;
+	-moz-transition:0.5s all;
+	-o-transition:0.5s all;
+	-ms-transition:0.5s all;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0;
+     font-family: 'Roboto Condensed', sans-serif;
+}	
+p{
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+ul{
+	margin:0;
+	padding:0;
+}
+label{
+	margin:0;
+}
+.header-top {
+        padding: 1.5em 0;
+		background:#fff;
+}
+/*--logo--*/
+.logo {
+  float: left;
+}
+.logo  a{
+ display:block;
+}
+.logo a h1 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #fff;
+    background: #464646;
+    padding: 0.2em 0.5em;
+}
+.logo  a h1:hover{
+ text-decoration:none;
+}
+/*--logo--*/
+/*--social--*/
+.social {
+    float: right;
+    width: 26.33%;
+    padding: 0.32em 0;
+}
+.social ul{
+	padding:0;
+	margin:0;
+}
+.social ul li{
+    display: inline-block;
+    margin: 0;
+}
+.social ul li a.facebook{
+    background: url(https://4.bp.blogspot.com/-RzADWXIzf7g/Wb25pGH6iAI/AAAAAAAAD2M/NpCuIGotXBg9TNipAC-uY_CJIbc7Po9XgCLcBGAs/s1600/social.png) no-repeat 0px 0px; 
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+.social ul li a.twitter{
+    background: url(https://4.bp.blogspot.com/-RzADWXIzf7g/Wb25pGH6iAI/AAAAAAAAD2M/NpCuIGotXBg9TNipAC-uY_CJIbc7Po9XgCLcBGAs/s1600/social.png) no-repeat -34px 0px ;
+}
+.social ul li a.chrome{
+    background: url(https://4.bp.blogspot.com/-RzADWXIzf7g/Wb25pGH6iAI/AAAAAAAAD2M/NpCuIGotXBg9TNipAC-uY_CJIbc7Po9XgCLcBGAs/s1600/social.png) no-repeat -68px 0px ;
+}
+.social ul li a.in{
+    background: url(https://4.bp.blogspot.com/-RzADWXIzf7g/Wb25pGH6iAI/AAAAAAAAD2M/NpCuIGotXBg9TNipAC-uY_CJIbc7Po9XgCLcBGAs/s1600/social.png) no-repeat -102px 0px ;
+}
+.social ul li a.beh{
+    background: url(https://4.bp.blogspot.com/-RzADWXIzf7g/Wb25pGH6iAI/AAAAAAAAD2M/NpCuIGotXBg9TNipAC-uY_CJIbc7Po9XgCLcBGAs/s1600/social.png) no-repeat -136px 0px ;
+}
+.social ul li a.vem{
+    background: url(https://4.bp.blogspot.com/-RzADWXIzf7g/Wb25pGH6iAI/AAAAAAAAD2M/NpCuIGotXBg9TNipAC-uY_CJIbc7Po9XgCLcBGAs/s1600/social.png) no-repeat -169px 0px ;
+}
+.social ul li a.yout{
+    background: url(https://4.bp.blogspot.com/-RzADWXIzf7g/Wb25pGH6iAI/AAAAAAAAD2M/NpCuIGotXBg9TNipAC-uY_CJIbc7Po9XgCLcBGAs/s1600/social.png) no-repeat -202px 0px ;
+}
+.social ul li a.facebook:hover{
+	opacity:.5;
+}
+/*--social--*/
+/*--search--*/
+.search {
+    float: right;
+    width: 25%;
+    margin: 0.2em 0;
+}
+.search {
+    position: relative;
+    border: 2px solid #333333;
+    padding: 0.5em 0;
+    background: #fff;
+}
+.search input[type="text"]{
+	width: 80%;
+	outline: none;
+	padding: 0em 0.6em;
+	font-size: 1em;
+	color: #333333;
+	position: relative;
+	border: none;
+}
+.search input[type="submit"]{
+	background: url(https://3.bp.blogspot.com/-XqsWmUA-RNQ/Wb3iXW219JI/AAAAAAAAD2c/qzKze4Kf4bUi88I-3xkrtBeCBMPZNLItgCLcBGAs/s1600/search-icon.png) no-repeat 0px 2px #fff;
+	border: none;
+	height: 26px;
+	width: 26px;
+	display: inline-block;
+	position: absolute;
+	outline: none;
+	cursor: pointer;
+	top: 6px;
+	right: 2px;
+}
+/*--search--*/
+.logo a span {
+    font-size: 0.9em;
+    margin-left: 5em;
+    padding-top: 0.5em;
+}
+.head-bottom {
+    background: #fa4b2a;
+}
+/*--navigation--*/
+ul.nav.navbar-nav li.active a {
+    background:#464646 ! important;
+    color: #fff ! important;
+	text-transform: uppercase ! important;
+	font-weight:700;
+}
+ul.nav.navbar-nav li a:hover{
+    background:#464646 ! important;
+    color: #fff ! important;
+}
+ul.nav.navbar-nav li a {
+    color: #fff ! important;
+    text-transform: uppercase ! important;
+    font-weight: 700 ! important;
+    padding: 15px 23px ! important;
+    border-right: 1px solid rgba(255, 255, 255, 0.32) ! important;
+    font-size: 1em;
+}
+.head-bottom ul.dropdown-menu li a {
+    color: #000 ! important;
+	padding:8px 15px ! important;
+	font-size:0.9em ! important;
+}
+.navbar-collapse {
+    padding-left: 0px ! important;
+	 padding-right: 0px ! important;
+}
+.collapse {
+    display: none;
+}
+/*--navigation--*/
+/*--banner--*/
+.banner{
+background: url(https://3.bp.blogspot.com/-L57X9WI4jIA/Wb3iXZWSfCI/AAAAAAAAD2k/3QVWdSpQ3T0zI16QI5KyMT8-yCxrSPhUwCLcBGAs/s1600/banner.jpg) no-repeat 0px 0px;
+background-size:cover;
+-webkit-background-size: cover;
+-o-background-size: cover;
+-ms-background-size: cover;
+-moz-background-size: cover;
+min-height: 550px;
+}
+.banner a {
+    font-size: 1em;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.8em 2em;
+    border: 2px solid #fff;
+    background: rgba(255, 255, 255, 0.32);
+}
+.banner a:hover {
+    border: 2px solid #464646;
+    color: #fff;
+    background: rgba(70, 70, 70, 0.67);
+}
+.banner h2 {
+    font-size:2.5em;
+    font-weight: 600;
+    color: #fff;
+}
+.banner {
+    padding: 10em 0 0;
+    text-align: center;
+}
+.banner p {
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.46);
+    font-weight: 400;
+    line-height: 1.8em;
+    margin: 1em auto 2em;
+    width: 70%;
+}
+/*--banner--*/
+/*--technology-left--*/
+.blog-poast-info {
+	border-top: 1px solid #aeaeae;
+    padding: 1em 0;
+    text-align: left;
+}
+.blog-poast-info ul li {
+	display:inline-table;
+	margin-right: 1em;
+}
+.blog-poast-info ul li{
+	color: #000;
+	font-size:0.8125em;
+	vertical-align:middle;
+}
+.blog-poast-info li i {
+    font-size:1.5em;
+    color: #aeaeae;
+    margin-right: 0.3em;
+    margin-top: 0px;
+	vertical-align:middle;
+}
+i.glyphicon.glyphicon-comment {
+    vertical-align: middle;
+}
+.blog-poast-info ul li a {
+	    color:#000;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	vertical-align:middle;
+}
+.blog-poast-info ul li a:hover{
+	text-decoration:none;
+}
+.blog-poast-info ul li a:hover {
+	color:#fa4b2a;
+}
+.blog-section {
+  padding: 4em 0;
+  position: relative;
+}
+.tc-ch h3 a {
+    color: #fa4b2a;
+    font-weight: 700;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.tc-ch p {
+    color: #777;
+    font-size: 0.875em;
+    line-height: 1.8em;
+    margin: 1em 0;
+}
+.tc-ch h3 {
+    margin: 0.5em 0 0;
+	font-size:1.7em;
+}
+.tc-ch {
+    background: #fff;
+    padding: 2em;
+    margin-bottom: 1em;
+	 position: relative;
+}
+a.blog{
+    position: absolute;
+    top: 4em;
+    background: #386ecf;
+    padding: 0.3em 1.8em;
+    color: #fff;
+}
+a.blog.pink{
+    background: #d43d7d;
+}
+a.blog.gren{
+    background: #42d948;
+}
+a.blog.orn{
+    background: #c75830;
+}
+.tech-no {
+    position: relative;
+    top: -33px;
+}
+
+.tc-ch {
+    float: left;
+    width: calc(100% - 42px);
+}
+.soci {
+    float: left;
+    padding-top: 2.025em;
+}
+.soci li {
+    display: block;
+}
+.soci ul li a.facebook-1{
+    background: url(https://2.bp.blogspot.com/-Z0he_qH10ko/Wb3iXSgNuXI/AAAAAAAAD2g/zCOAGwb8O1ooNqyEuO5WBFKiDYW3Xt7rQCLcBGAs/s1600/111.png) no-repeat 0px 0px; 
+    width: 42px;
+    height: 42px;
+    display: block;
+}
+.soci ul li a.twitter{
+    background: url(https://2.bp.blogspot.com/-Z0he_qH10ko/Wb3iXSgNuXI/AAAAAAAAD2g/zCOAGwb8O1ooNqyEuO5WBFKiDYW3Xt7rQCLcBGAs/s1600/111.png) no-repeat -42px 0px ;
+}
+.soci ul li a.chrome{
+    background: url(https://2.bp.blogspot.com/-Z0he_qH10ko/Wb3iXSgNuXI/AAAAAAAAD2g/zCOAGwb8O1ooNqyEuO5WBFKiDYW3Xt7rQCLcBGAs/s1600/111.png) no-repeat -84px 0px ;
+}
+i.glyphicon.glyphicon-envelope {
+    background: #738a8d;
+    width: 42px;
+    height: 42px;
+    top: -1px;
+    text-align: center;
+    padding: 0.5em 0;
+    color: #fff;
+    font-size: 1.3em;
+}
+i.glyphicon.glyphicon-print {
+    background: #738a8d;
+     width: 42px;
+    height: 42px;
+    top: -1px;
+    text-align: center;
+    padding: 0.5em 0;
+    color: #fff;
+    font-size: 1.3em;
+}
+i.glyphicon.glyphicon-plus{
+    background: #f8694d;
+     width: 42px;
+    height: 42px;
+    top: -1px;
+    text-align: center;
+    padding: 0.5em 0;
+    color: #fff;
+    font-size: 1.3em;
+}
+/*--technology-left--*/
+/*--technology-right--*/
+.blo-top form input[type="text"] {
+  width: 100%;
+  color: #333333 ! important;
+  outline: none;
+  font-size: 16px;
+  padding: .5em;
+  border: 2px solid #333333;
+  -webkit-appearance: none;
+}
+.blo-top form input[type="submit"] {
+  background:#f53f1a; 
+  padding: .3em 1em;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  display: block;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+.blo-top form input[type="submit"]:hover{
+	background:#333333;
+}
+.button {
+  margin: 1em 0 0;
+  float: left;
+}
+.blog-grid-left {
+    float: left;
+    width: 36%;
+}
+.blog-grid-right {
+    float: left;
+    width: 60%;
+    margin-left: 0.5em;
+}
+.tech-btm p {
+    margin: 1em 0;
+    font-size: 0.875em;
+    color: #777;
+	line-height:1.8em;
+}
+.tech-btm h4 {
+    font-size: 1.5em;
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 1em;
+}
+.tech-btm h5 {
+    font-size: 1.1em;
+    line-height: 1.4em;
+    font-weight: 700;
+}
+.blog-grid-right h5 a {
+    color: #4A4747;
+}
+.blo-top {
+    border-bottom: 1px solid #aeaeae;
+}
+.tech-btm {
+    padding: 2em;
+	background:#fff;
+}
+.technology-right{
+	width:30%
+}
+.technology-right-1 {
+    width: 30%;
+}
+.technology-left{
+	width:70%
+}
+.blog-grids {
+    border-bottom: 1px dotted #aeaeae;
+    padding: 1.3em 0;
+}
+/*--technology-right--*/
+/*--footer--*/
+.footer {
+    background: #121212;
+    padding: 3em 0;
+}
+.footer h6 {
+    font-size: 1.7em;
+    background: #fa4b2a;
+    padding: 0.5em 1.7em;
+    font-weight: 700;
+    color: #fff;
+}
+.footer p {
+    font-size: 0.875em;
+    color: #fff;
+    margin: 1em 0;
+    line-height: 1.8em;
+}
+.footer-middle p {
+    margin: 0;
+}
+.footer-middle a {
+    color: #fa4b2a;
+}
+.footer h4 {
+    font-size: 1.7em;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    width: 89%;
+    margin-bottom: 1em;
+}
+.mid-btm {
+    margin-bottom: 1em;
+}
+.footer-middle {
+    padding-left: 10em;
+}
+.footer-right li a {
+    color: #fff;
+    font-size: 0.875em;
+    line-height: 1.8em;
+}
+.footer-right li a:hover{
+    color: #fa4b2a;
+}
+.footer-right li {
+	display:block;
+}
+.footer-right {
+    padding-left: 8em;
+}
+/*--footer--*/
+/*--footer-bottom--*/
+.foot-nav ul li{
+	display:inline-block;
+	float:left;
+}
+.foot-nav  li a{
+	color:#fff;
+	font-size:1em;
+	padding:0.5em 1em;
+	text-decoration: none;
+	font-weight:700;
+}
+.foot-nav {
+    background: #fa4b2a;
+}
+.foot-nav ul {
+    padding: 0.65em 0;
+}
+.foot-nav li a {
+    color: #fff;
+    font-size: 0.95em;
+    padding: 0.7em 1.5em;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-right: 1px solid rgba(255, 255, 255, 0.32) ! important;
+}
+/*--footer-bottom--*/
+.copyright {
+    background: #fece14;
+    padding: 1em 0;
+    text-align: center;
+}
+.banner1{
+background: url(https://3.bp.blogspot.com/-L57X9WI4jIA/Wb3iXZWSfCI/AAAAAAAAD2k/3QVWdSpQ3T0zI16QI5KyMT8-yCxrSPhUwCLcBGAs/s1600/banner.jpg) no-repeat 0px 0px;
+background-size:cover;
+-webkit-background-size: cover;
+-o-background-size: cover;
+-ms-background-size: cover;
+-moz-background-size: cover;
+min-height: 300px;
+}
+.technology-1 {
+    margin: 2em 0;
+}
+.vide {
+    padding: 2em;
+    background: #fff;
+    margin-bottom: 1em;
+}
+.vide-1 {
+    padding: 2em 2em 1.6em;
+    background: #fff;
+}
+.rev-img {
+    float: left;
+    width: 40%;
+}
+.rev-info {
+    float: right;
+    width: 57%;
+}
+.rev h3 {
+    margin: 0 ! important;
+}
+.rev {
+    margin-bottom: 1.6em;
+}
+.technology-1 h3 {
+    margin: 0.5em 0 0;
+    font-size: 1.7em;
+}
+.technology-1 h3 a {
+    color: #fa4b2a;
+    font-weight: 700;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.technology-1 p {
+    color: #777;
+    font-size: 0.875em;
+    line-height: 1.8em;
+    margin: 1em 0;
+}
+.technology-1 p.info {
+    margin: 0;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 3px;
+    color: rgba(0, 0, 0, 0.75);
+}
+/*--business--*/
+.business {
+    padding: 2em 2em 1.8em;
+    background: #fff;
+}
+.business li {
+    display: block;
+}
+.business li a {
+    color: #333333;
+    font-size: 1em;
+    line-height: 2em;
+}
+.business h3 {
+    color: #f53f1a;
+    font-size: 1.7em;
+    font-weight: 700;
+    margin: 0 0 0.5em;
+}
+.business h2 {
+    color: #f53f1a;
+    font-size: 1.7em;
+    font-weight: 700;
+    margin: 0.5em 0;
+} 
+.business h2  a{
+    color: #f53f1a;
+}
+.business h4{
+    color: #f53f1a;
+    font-size: 1.7em;
+    font-weight: 700;
+    margin: 0.5em 0;
+	text-align: center;
+}
+.business-bottom {
+    margin-top: 3em;
+}
+.business-top {
+    padding-bottom: 3em;
+    border-bottom: 1px solid #aeaeae;
+}
+/*--business--*/
+.design-left {
+    margin-top: 2em;
+}
+.design-top {
+    margin-top: 3.7em;
+}
+.rev-1 {
+    padding-bottom: 2em;
+    margin-bottom: 1.55em;
+    border-bottom: 1px solid #aeaeae;
+}
+/*--contact--*/
+.map iframe {
+    width: 100%;
+    height: 400px;
+}
+.contact-grids h2{
+	color: #ed645c;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+  font-size: 2.1em;
+  margin-top: 1.5em;
+  font-family: 'Audiowide', cursive;
+}
+.contact-grids p.design{
+	margin: .2em 0 0 0;
+	color: #999999;
+	font-size: 25px;
+	text-align: center;
+	font-weight: 300;
+	}
+.contact-grid{
+	float:left;
+	width:25%;
+	text-align:center;
+	}
+.contact-grid p{
+	color:#898888;
+	font-size:15px;
+	margin:1em 0 0;
+	}
+.contact-grid p span{
+	display:block;
+	margin:.3em 0 0;
+	}
+.glyphicon-phone-alt:before,.glyphicon-map-marker:before  {
+   color:#C2C4C5;
+   font-size:22px;
+}
+.glyphicon-envelope2:before {
+    content: "\2709";
+	color:#C2C4C5;
+   font-size:22px;
+}
+.contact-grid p a{
+	color:#898888;
+	font-size:15px;
+	}
+.contact-grid p a:hover{
+	text-decoration:none;
+	color:#7EC259;
+	}
+.contact-grid:nth-child(2){
+	margin:0 4em;
+	}
+.contact-grids input[type="text"],.contact-grids textarea{
+	outline:none;
+	border:1px solid #a1a1a1;
+	background:none;
+	padding:15px 10px;
+	font-size:15px;
+	}
+.contact-grids input[type="text"] {
+    width: 32%;
+    float: left;
+}
+.contact-grids input[type="text"]:nth-child(2){
+	margin:0 0.8em;
+	}
+.contact-grids textarea{
+	width:100%;
+	height:285px;
+	margin:1.5em 0;
+	resize:none;
+	}
+.contact-grids input[type="submit"]{
+	outline:none;
+	border:none;
+	background:#f53f1a;
+	width: 16%;
+	display: block;
+	padding: 8px 0px;
+	border:2px solid #f53f1a;
+	color:#fff;
+	font-size:16px;
+	font-weight:700;
+	transition:.5s all;
+	-webkit-transition:.5s all;
+	-moz-transition:.5s all;
+	-o-transition:.5s all;
+	-ms-transition:.5s all;
+}
+.contact-grids input[type="submit"]:hover{
+	background:#fff;
+	color:#333333;
+	border:2px solid #333333;
+	}
+.contact-icons{
+	padding:3em 0 4em;
+}
+.map{
+	margin-top:3em;
+}
+span.glyphicon.glyphicon-download-alt,span.glyphicon.glyphicon-file,span.glyphicon.glyphicon-qrcode,span.glyphicon.glyphicon-globe,span.glyphicon.glyphicon-screenshot,span.glyphicon.glyphicon-link,span.glyphicon.glyphicon-share,span.glyphicon.glyphicon-record{
+    font-size: 4em;
+	padding-top:0.25em;
+}
+.servc-grid-right h4 {
+    text-align: left;
+	margin:0;
+}
+.servc-grid {
+    margin-bottom: 2.22em;
+}
+.grid_3.grid_5 {
+    margin-top: 2em;
+}
+/*--single--*/
+h4.media-heading {
+	font-size: 1.5em;
+  color: #333333;
+ text-align:left;
+ margin:0;
+ font-weight:400;
+}
+.media-body p {
+	color: #9E9E9E;
+  	font-size: 0.875em;
+  	line-height: 1.8em;
+}
+.comment-bottom input[type="text"],.comment-bottom textarea {
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #e2e2e2;
+  padding:1em 0.8em;
+  font-size: 1em;
+  color: #e2e2e2;
+  margin:0 0 0.7em ;
+  float:left;  
+}
+.comment-bottom textarea{
+ 	resize:none;
+  	margin: 0em 0 0.5em;
+      min-height: 180px;
+      -webkit-appearance: none;
+}
+.comment-bottom input[type="submit"] {
+  width: 11%;
+  font-size: 1.1em;
+  background: #fa4b2a;
+  padding: 0.5em 1em;
+  text-align: center;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+  transition: 0.5s all;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
+  -ms-transition: 0.5s all;
+  -moz-transition: 0.5s all;
+  cursor:pointer;
+}
+.comment-bottom input[type="submit"]:hover {
+	background:#333333;
+}
+.comment h3, .comment-top h2 {
+    color: #f53f1a;
+    font-size: 2.5em;
+    text-align: left;
+    padding: 0 0 0.5em;
+	font-weight:400;
+}
+
+.blog-text h5 {
+    font-size: 1.7em;
+    margin: 0.6em 0;
+	color:#f53f1a;
+	font-weight:700;
+}
+/*--//single--*/
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+    background-color:#464646 ! important;
+}
+.copyright p {
+    font-size: 0.875em;
+    color: #000;
+    line-height: 1.8em;
+}
+.copyright p a{
+    color: #000;
+	font-weight:700;
+}
+.copyright p a:hover{
+    color:#fa4b2a;
+}
+/*-- responsive-design --*/
+@media (max-width: 1024px){
+ul.nav.navbar-nav li a {
+    padding: 15px 14px ! important;
+}
+.banner {
+    padding: 8em 0 0;
+}
+.banner h2 {
+    font-size: 2em;
+}
+.banner p {
+    font-size: 1em;
+}
+.banner {
+    min-height: 500px;
+}
+.tech-btm h4 {
+    font-size: 1.17em;
+    margin-bottom: 0.5em;
+}
+.blog-grid-right {
+    width: 59%;
+}
+.tech-btm h5 {
+    font-size: 0.9em;
+}
+.footer h6 {
+    font-size: 1.5em;
+}
+.footer-middle {
+    padding-left: 7em;
+}
+.footer-right {
+    padding-left: 6em;
+}
+.footer h4 {
+    font-size: 1.6em;
+}
+.foot-nav li a {
+    padding: 0.7em 1.15em;
+}
+.comment-bottom input[type="submit"] {
+    width: 16%;
+    font-size: 1em;
+	padding: 0.4em 1em;
+}
+.contact-grid p {
+    font-size: 13px;
+}
+.contact-grids input[type="text"]:nth-child(2) {
+    margin: 0 0.7em;
+}
+}
+/*-- responsive-design --*/
+@media (max-width: 966px){
+ul.nav.navbar-nav li a {
+    padding: 12px 5px ! important;
+	font-size:0.95em;
+}
+.search {
+    width: 23%;
+}
+.social {
+    width: 36.33%;
+}
+.logo a h1 {
+    font-size: 1.8em;
+}
+.technology-left {
+    width: 70%;
+	float:left;
+}
+.technology-right {
+    width: 30%;
+    float: right;
+}
+.tc-ch {
+    float: left;
+    width: 91%;
+	padding:1em;
+}
+.tech-btm {
+    padding: 1em;
+}
+.tech-btm h4 {
+    text-align: center;
+    line-height: 1.2em;
+}
+.tech-btm p {
+    font-size: 0.8125em;
+    line-height: 1.5em;
+}
+.tc-ch p {
+    font-size: 0.8125em;
+    line-height: 1.5em;
+}
+.blog-poast-info li i {
+    font-size: 1.1em;
+	margin-top:-3px;
+}
+.blog-poast-info ul li {
+    margin-right: 0.3em;
+}
+.blog-grid-right {
+    width: 58%;
+}
+.tech-btm h5 {
+    font-size: 0.875em;
+}
+
+.footer-left {
+    float: left;
+    width: 33.33%;
+}
+.footer-middle {
+    padding-left: 3em;
+    float: left;
+    width: 33.33%;
+}
+.footer-right {
+    padding-left: 3em;
+    float: left;
+    width: 33.33%;
+}
+.footer p {
+    font-size: 0.8125em;
+    line-height: 1.5em;
+}
+.footer-right li a {
+    font-size: 0.825em;
+}
+.footer h6 {
+    font-size: 1.3em;
+	padding:0.5em 1em;
+}
+.footer {
+    padding: 3em 0 2em;
+}
+.foot-nav li a {
+    padding: 0.7em 0.6em;
+	font-size:0.9em;
+}
+.technology-1 p {
+    font-size: 0.8125em;
+}
+.technology-1 h3 {
+    font-size: 1.5em;
+}
+.vide {
+    padding: 1em;
+}
+.technology-right-1 {
+    width: 30%;
+    float: right;
+}
+.vide-1 {
+    padding: 1em 1em;
+}
+.business {
+    padding: 1em 1em 1em;
+}
+.comment h3, .comment-top h2 {
+    font-size: 2em;
+}
+h4.media-heading {
+    font-size: 1.3em;
+}
+.contact-grids input[type="text"]:nth-child(2) {
+    margin: 0 0.5em;
+}
+.contact-grid {
+    width: 31%;
+}
+.contact-grid:nth-child(2) {
+    margin: 0 0em;
+}
+}
+/*-- responsive-design --*/
+@media (max-width: 768px){
+.banner {
+    min-height: 440px;
+	padding:6em 0 0;
+}
+span.glyphicon.glyphicon-file, span.glyphicon.glyphicon-qrcode, span.glyphicon.glyphicon-globe, span.glyphicon.glyphicon-screenshot, span.glyphicon.glyphicon-link, span.glyphicon.glyphicon-share, span.glyphicon.glyphicon-record {
+    font-size: 3em;
+}
+.business-left {
+    margin-top: 2em;
+}
+}
+/*-- responsive-design --*/
+@media (max-width: 736px){
+.logo a h1 {
+    font-size: 1.4em;
+	margin-top:0.2em;
+}
+.social {
+    width: 42.33%;
+}
+.header-top {
+    padding: 1em 0;
+}
+.banner {
+    min-height: 330px;
+    padding: 4em 0 0;
+}
+.banner h2 {
+    font-size: 1.7em;
+}
+.banner p {
+    font-size: 0.875em;
+	width:100%;
+}
+.technology-left {
+    width: 100%;
+float:none;
+}
+.technology-right {
+    width: 100%;
+    float: none;
+}
+.technology-right {
+    width: 100%;
+    float: none;
+}
+.tech-btm {
+    padding: 2em;
+}
+.footer {
+    margin-top: 2em;
+}
+.footer h6 {
+    font-size: 1.2em;
+    padding: 0.5em 0.3em;
+}
+.footer h4 {
+    font-size: 1.5em;
+}
+.blog-grid-left {
+    float: left;
+    width: 18%;
+}
+.tc-ch {
+    width: calc(100% - 42px);
+    padding: 2em;
+}
+.navbar-nav {
+    margin: 7.5px 0px;
+}
+.technology-right-1 {
+    width: 100%;
+    float: right;
+    margin-top: 1em;
+}
+.banner1 {
+    min-height: 150px;
+}
+.navbar-toggle .icon-bar {
+    background: #fff ! important;
+}
+.foot-nav li a {
+    padding: 0.5em 0.6em;
+    font-size: 0.85em;
+}
+}
+/*-- responsive-design --*/
+@media (max-width: 667px){
+.foot-nav li a {
+    padding: 0.5em 0.4em;
+}
+}
+/*-- responsive-design --*/
+@media (max-width: 600px){
+.foot-nav li a {
+    padding: 0.5em 0.2em;
+}
+}
+/*-- responsive-design --*/
+@media (max-width: 568px){
+.logo {
+    float: left;
+    width: 40%;
+    text-align: center;
+}
+.social {
+    width: 100%;
+    float: right;
+    text-align: right;
+    margin-top: 1em;
+    padding: 0;
+}
+.logo a h1 {
+	margin-top:0;
+    padding: 0.35em 0.5em;
+}
+.search {
+    width: 40%;
+}
+.banner {
+    padding: 3em 0 0;
+}
+.rev-img {
+    float: left;
+    width: 100%;
+}
+.rev-info {
+    float: right;
+    width: 100%;
+    margin-top: 1em;
+}
+.contact-grid {
+    width: 100%;
+    margin-bottom: 1em;
+	text-align:left;
+}
+.contact-icons {
+    padding: 1em 0 1em;
+}
+.contact-grids input[type="text"] {
+    width: 100%;
+    float: left;
+    margin-bottom: 0.5em;
+}
+.contact-grids input[type="text"]:nth-child(2) {
+    margin: 0 0 0.5em;
+}
+.contact-grids textarea {
+    height: 200px;
+}
+.contact-grids input[type="submit"] {
+    width: 31%;
+    padding: 7px 0px;
+}
+.foot-nav li a {
+    font-size: 0.8em;
+}
+}
+/*-- responsive-design --*/
+@media (max-width: 480px){
+.footer-left {
+    float: none;
+    width: 100%;
+}
+.footer-middle {
+    float: none;
+    width: 100%;
+	margin:1.5em 0;
+	padding-left:1em;
+}
+.footer-right{
+    float: none;
+    width: 100%;
+	padding-left:1em;
+}
+.technology-1 h3 {
+    font-size: 1.2em;
+}
+.servc-grid-left {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 1em;
+}
+.servc-grid-right {
+    float: left;
+    width: 100%;
+    padding: 0;
+}
+.servc-grid {
+    margin-bottom: 1em;
+}
+.servc-grid-right h4 {
+    font-size: 1.5em;
+}
+.blog-text h5 {
+    font-size: 1.4em;
+}
+.business li a {
+    font-size: 0.875em;
+}
+.map iframe {
+    width: 100%;
+    height: 210px;
+}
+.map {
+    margin-top: 2em;
+}
+.foot-nav ul li {
+    margin-bottom: 0.5em;
+}
+.foot-nav li a {
+    padding: 0.5em 0.84em;
+	border-right:none ! important;
+}
+}
+/*-- responsive-design --*/
+@media (max-width: 414px){
+.tc-ch {
+    float: left;
+    padding: 1em;
+}
+.banner h2 {
+    font-size: 1.2em;
+}
+.banner p {
+    font-size: 0.8em;
+    line-height: 1.4em;
+}
+.banner {
+    min-height:280px;
+}
+.banner a {
+    font-size: 0.9em;
+    padding: 0.5em 1em;
+}
+.tech-btm {
+    padding: 1em;
+}
+.logo {
+    width: 46%;
+}
+.logo a h1 {
+    padding: 0.6em 0.5em;
+	font-size:1.2em;
+}
+.vide iframe {
+    min-height: 150px ! important;
+}
+.servc-grid-right h4 {
+    font-size: 1.25em;
+}
+.media-left, .media-right, .media-body {
+    float: left ! important;
+    width: 100% ! important;
+}
+h4.media-heading {
+    text-align: left;
+    margin: 1em 0;
+}
+.comment-bottom input[type="submit"] {
+    width: 25%;
+}
+.business h2 {
+    font-size: 1.4em;
+}
+.design-top {
+    margin-top: 1.7em;
+}
+}
+/*-- responsive-design --*/
+@media (max-width: 384px){
+.logo {
+    width: 50%;
+}
+.logo a h1 {
+   font-size:1.2em;
+    padding: 0.55em 0.5em;
+}
+.search {
+    margin: 0;
+}
+
+.foot-nav li a {
+    padding: 0.5em 0.55em;
+}
+}
+/*-- responsive-design --*/
+@media (max-width: 320px){
+.logo a h1 {
+    font-size: 1em;
+    padding: 0.5em 0.5em;
+}
+.search {
+    width: 43%;
+	border: 1px solid #333333;
+	padding: 0.3em 0;
+}
+.social {
+    text-align: center;
+}
+.header-top {
+    padding: 0.8em 0 0;
+}
+.search input[type="submit"] {
+    top: 2px;
+}
+.banner {
+    padding: 2em 0 0;
+}
+.navbar-toggle {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.technology-left {
+    padding: 0;
+}
+.tech-no {
+    top: -23px;
+}
+.banner p {
+    margin: 1em auto 1.5em;
+}
+.banner a {
+    font-size: 0.85em;
+    padding: 0.4em 0.8em;
+}
+.soci {
+    padding-top: 1.42em;
+}
+.tc-ch h3 {
+    font-size: 1.2em;
+}
+.technology-right {
+    padding: 0;
+}
+.blog-grid-left {
+    width: 30%;
+}
+.blog-grid-right {
+    width: 65%;
+}
+.footer-left,.footer-middle,.footer-right {
+    padding: 0;
+}
+.footer {
+    margin-top: 1em;
+}
+.footer {
+    padding: 2em 0 2em;
+}
+.footer h4 {
+    margin-bottom: 0.5em;
+}
+.copyright {
+    padding: 0.5em 0;
+}
+.banner1 {
+    min-height: 130px;
+}
+.technology-right-1 {
+    padding: 0;
+}
+.blog-text h5 {
+    font-size: 1.2em;
+}
+.business-left {
+    margin-top: 1em;
+    padding: 0;
+}
+.foot-nav li a {
+    padding: 0.5em 0.35em;
+    font-size: 0.75em;
+}
+}
+/*Defaul CSS Comment v1.0.1*/
+.comment {
+    position: relative;
+}
+.comment-replies .comment, 
+.comment-replybox-single,
+.comment-replybox-thread {
+    margin-left: 5rem;
+}
+.comment-thread ol,
+.comment-thread li {
+    list-style-type: none;
+    text-align: left;
+}
+.comment-thread ol {
+    padding: 0;
+}
+.comment-thread li::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+.comment-block {
+    margin-bottom: 1rem;
+    margin-left: 5rem;
+}
+.comment-header .user {
+    margin-right: .2rem;
+}
+.comment-header .user, .comment-header .user a {
+    font-size: 1.2em;
+    color: #333333;
+    text-align: left;
+    margin: 0;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+}
+.comment-header .datetime > a {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 400;
+    display: none;
+}
+.comment-replies .comment-block {
+    margin-left: 4rem;
+}
+.avatar-image-container {
+    background-size: cover;
+    background-color: #4c4c4c;
+    float: left;
+    height: 70px;
+    width: 70px;
+}
+.avatar-image-container img {
+    width: 100%;
+}
+.comment-replies .avatar-image-container {
+    width: 50px;
+    height: 50px;
+}
+.thread-toggle {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 40;
+    display: none;
+}
+.thread-toggle a {
+    text-indent: -9999px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    opacity: 0.5;
+    background: url(https://2.bp.blogspot.com/-a8T9QoRSEhQ/WX-4kAduIeI/AAAAAAAACzE/iT_yTwN8Jn8Y6yozc7Kt8yGJRU0KFuarQCLcBGAs/s1600/arrow-down.png) no-repeat center transparent;
+}
+.thread-toggle.thread-expanded a {
+    background-image: url(https://4.bp.blogspot.com/-iSlCbL2tuHc/WX-4kAA8s3I/AAAAAAAACzI/kDZT0aEUbaksawXUZmuxBzBtp2R4c3ZkwCLcBGAs/s1600/arrow-up.png);
+}
+.thread-toggle a:hover {
+    opacity: 0.9;
+}
+.continue,
+.loadmore,
+.thread-chrome.thread-collapsed {display: none;}
+#oopss {
+    background: rgba(255,255,255,0.98);
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 400;
+    font-size: 45px;
+    font-family: 'Open Sans',sans-serif;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    line-height: 1.5em;
+    z-index: 9999;
+}
+#error-text {
+    top: 30%;
+    position: relative;
+    font-size: 40px;
+    color: #aaa;
+}
+#error-text span {
+    color: #aaa;
+    font-size: 100px;
+    font-weight: 700;
+}
+#error-text p {
+    margin: 0!important;
+}
+#error-text a.back {
+    background: #aaa;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    border: 1px solid #fdfdfd;
+    line-height: normal;
+    text-transform: uppercase;
+    border-radius: 3px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: all 0.5s ease-out;
+}
+#error-text a.back:hover {
+    background: #fff;
+    color: #aaa;
+    border: 1px solid #bbb;
+}
+#error-text a.back:active {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    transform: scale(0.9);
+    background: #f56954;
+    color: #fff;
+    border: 1px solid #ea6450;
+}
+@media only screen and (max-width: 640px){
+#error-text a.back {
+    padding: 5px 10px;
+    font-size: 15px;
+    }
+#error-text a.back:hover, #error-text a.back:active {
+    border: 0;
+}
+#error-text span {
+    font-size: 60px;
+}
+}
+
+.blog-pager {
+    text-align: center;
+}
+
+.blog-pager a {
+    color: #fff;
+    padding: .2rem 1rem;
+    background: #f53f1a;
+    display: inline-block;
+}
+
+.blog-pager a:hover {
+    background: #333;
+}
+
+@media (max-width: 414px) {
+.avatar-image-container, .comment-replies .avatar-image-container {
+    float: none;
+    width: 70px;
+    height: 70px;
+}
+.comment-block, .comment-replies .comment, .comment-replybox-single, .comment-replybox-thread,.comment-replies .comment-block {
+    margin: 1rem 0 0;
+}
+}
+
+/* CSS Shortcodes */
+.button{float:left;list-style:none;text-align:center;width:95%;margin:10px;
+padding:2px;font-size:14px;clear:both;}
+.button ul {margin:0;padding:0}
+.button li{display:inline;margin:5px;padding:0;list-style:none;}
+.demo,.download {padding:8px 12px!important;color:#fff!important;font-weight:700;font-size:14px;font-family:&#39;Open Sans&#39;,sans-serif;text-align:center;text-transform:uppercase;letter-spacing:0.5px;border-radius:2px;transition:all 0.3s ease-out;}
+.demo {background-color:#aaa;}
+.download {background-color:#f48878;}
+.demo:hover {background-color:#888;color:#fff;}
+.download:hover {background-color:#f56954;color:#fff;}
+.demo:before {content:&#39;\f135&#39;;display:inline-block;vertical-align:top;margin-right:10px;width:16px;height:16px;line-height:24px;font-family:fontawesome;transition:all 0.5s ease-out;}
+.download:before {content:&#39;\f019&#39;;display:inline-block;vertical-align:top;margin-right:10px;width:16px;height:16px;line-height:24px;font-family:fontawesome;transition:all 0.5s ease-out;}
+.first-letter{float:left;color:#f48878;font-size:75px;line-height:60px;padding-top:4px;padding-right:8px;padding-left:3px;font-family:Georgia}
+.widget .post-body ul,.widget .post-body ol{line-height:1.5;font-weight:400}
+.widget .post-body li{padding:0;line-height:1.5}
+.alert-message{position:relative;display:block;background-color:#f7f8fa;padding:20px;margin:20px 0;-webkit-border-radius:2px;-moz-border-radius:2px;border-radius:2px;color:#39484d;}
+.alert-message p{margin:0!important;padding:0;line-height:22px;font-size:13px;color:#39484d}
+.alert-message span{font-size:14px!important}
+.alert-message i{font-size:22px;text-align:left;display:inline-block;
+position:absolute;right:0;top:0;padding:20px;opacity:0.8;}
+.alert-message.success{background-color:#00acd6;color:#fff}
+.alert-message.success a,.alert-message.success span{color:#fff}
+.alert-message.alert{background-color:#0073b7;color:#fff}
+.alert-message.alert a,.alert-message.alert span{color:#fff}
+.alert-message.warning{background-color:#efa666;color:#fff}
+.alert-message.warning a,.alert-message.warning span{color:#fff}
+.alert-message.error{background-color:#f56c7e;color:#fff}
+.alert-message.error a,.alert-message.error span{color:#fff}
+.fa-check-circle:before{content:&quot;\f058&quot;}
+.fa-info-circle:before{content:&quot;\f05a&quot;}
+.fa-exclamation-triangle:before{content:&quot;\f071&quot;}
+.fa-exclamation-circle:before{content:&quot;\f06a&quot;}
+#flippy {text-align:center;}
+#flippy button {margin:10px auto;cursor:pointer;font-weight:700;font-size:14px;font-family:&#39;Open Sans&#39;,sans-serif;background-color:#f48878;color:#fff!important;padding:8px 12px!important;text-transform:uppercase;border-radius:2px;transition:all 0.3s ease-out;border: 0;}
+#flippy button:hover, #flippy button:focus {outline:none;background-color:#f56954;color:#fff;}
+#flippanel {padding:1px;text-align:left;background:#fafafa;border:1px solid #eee;}
+#flippanel {padding:24px;display:none;}
+#flippanel img {background:#f5f5f5;margin:10px auto;}
+/* CSS Post Table */
+.post-body table th, .post-body table td, .post-body table caption{border:1px solid #eee;padding:10px;text-align:left;vertical-align:top;}
+.post-body table.tr-caption-container {border:1px solid #eee;}
+.post-body th{font-weight:700;}
+.post-body table caption{border:none;font-style:italic;}
+.post-body table{}
+.post-body td, .post-body th{vertical-align:top;text-align:left;font-size:13px;padding:3px 5px;border:1px solid #eee;}
+.post-body th{background:#fafafa;}
+.post-body table.tr-caption-container td {border:none;padding:8px;}
+.post-body table.tr-caption-container, .post-body table.tr-caption-container img, .post-body img {max-width:100%;height:auto;}
+.post-body td.tr-caption {color:#666;font-size:80%;padding:0px 8px 8px !important;}
+table {max-width:100%;width:100%;margin:1.5em auto;}
+table.section-columns td.first.columns-cell{border-left:none}
+table.section-columns{border:none;table-layout:fixed;width:100%;position:relative}
+table.columns-2 td.columns-cell{width:50%}
+table.columns-3 td.columns-cell{width:33.33%}
+table.columns-4 td.columns-cell{width:25%}
+table.section-columns td.columns-cell{vertical-align:top}
+table.tr-caption-container{padding:4px;margin-bottom:.5em}
+td.tr-caption{font-size:80%}
+/* CSS Syntax Highlighter */
+pre {
+    padding: 32px 10px 0 10px;
+    margin: .5em 0;
+    white-space: pre;
+    word-wrap: break-word;
+    overflow: auto;
+    background-color: #333;
+    position: relative;
+    max-height: 500px;
+    border-radius: 3px;
+}
+pre::before {font-size:13px;content:attr(title);position:absolute;top:0;background-color:transparent;padding:6px 10px 7px 10px;left:0;right:0;color:#333;display:block;margin:0 0 15px 0;font-weight:700;box-shadow:0 0 3px #ccc;}
+pre::after {content:"Double click to selection";padding:2px 10px;width:auto;height:auto;position:absolute;right:8px;top:4px;font-size:12px;color:#888;line-height:20px;transition:all 0.3s ease-in-out;}
+pre:hover::after {opacity:0;top:-8px;visibility:visible;}
+code {font-family:Consolas,Monaco,'Andale Mono','Courier New',Courier,Monospace;line-height:16px;color:#aaa;background-color:transparent;
+padding:1px 2px;font-size:12px;}
+pre code {display:block;background:none;border:none;color:#aaa;direction:ltr;
+text-align:left;word-spacing:normal;padding:10px;font-weight:bold;}
+code .token.punctuation {color:#bbb;}
+pre code .token.punctuation {color:#777;}
+code .token.comment,code .token.prolog,code .token.doctype,code .token.cdata {color:#aaa;}
+code .namespace {opacity:.8;}
+code .token.property,code .token.tag,code .token.boolean,code .token.number {color:#d75046;}
+code .token.selector,code .token.attr-name,code .token.string {color:#88a9ad;}
+pre code .token.selector,pre code .token.attr-name {color:#00a1d6;}
+pre code .token.string {color:#6fb401;}
+code .token.entity,code .token.url,pre .language-css .token.string,pre .style .token.string {color:#5ac954;}
+code .token.operator {color:#1887dd;}
+code .token.atrule,code .token.attr-value {color:#009999;}
+pre code .token.atrule,pre code .token.attr-value {color:#1baeb0;}
+code .token.keyword {color:#e13200;font-style:italic;}
+code .token.comment {font-style:italic;}
+code .token.regex {color:#ccc;}
+code .token.important {font-weight:bold;}
+code .token.entity {cursor:help;}
+pre mark {background-color:#ea4f4e!important;color:#fff!important;padding:2px;border-radius:2px;}
+code mark {background-color:#ea4f4e!important;color:#fff!important;padding:2px;border-radius:2px;}
+pre code mark {background-color:#ea4f4e!important;color:#fff!important;padding:2px;border-radius:2px;}
+.comments pre {padding:10px 10px 15px 10px;background:#333;border-radius:3px;box-shadow:inset 0 0 5px rgba(0,0,0,0.2);text-shadow:0 -1px 0 rgba(0,0,0,0.3);}
+.comments pre::before {content:'Code';font-size:10px;font-weight:700;position:relative;top:0;background-color:#363636;padding:2px 8px;left:0;right:0;color:#fff;text-transform:uppercase;display:inline-block;margin:0 0 10px 0;border:none;border-radius:2px;border:1px solid #2a2a2a;box-shadow:inset 0 1px 0 rgba(255,255,255,0.2),inset 0 20px 20px rgba(255,255,255,0.1);text-shadow: 0 -1px 0 rgba(0,0,0,0.3);}
+.comments pre::after {font-size:11px;}
+.comments pre code {color:#aaa;}
+.comments pre.line-numbers {padding-left:10px;}
+pre.line-numbers {position:relative;padding-left:3.0em;counter-reset:linenumber;}
+pre.line-numbers > code {position:relative;}
+.line-numbers .line-numbers-rows {height:100%;position:absolute;top:0;font-size:100%;left:-3.5em;width:3.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;padding:10px 0 0 0;background:#444;}
+.line-numbers-rows > span {display:block;counter-increment:linenumber;}
+.line-numbers-rows > span:before {content:counter(linenumber);color:#aaa;display:block;
+padding-right:0.8em;text-align:right;transition:350ms;}
+pre[data-codetype="CSSku"]:before,pre[data-codetype="HTMLku"]:before,
+pre[data-codetype="JavaScriptku"]:before,pre[data-codetype="JQueryku"]:before{background-color:#fff;}
+
+.clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+/*share*/
+.share {
+    padding-top: 2rem;
+    clear: both;
+}
+
+.share a {
+    float: left;
+    margin: 0 .5rem .5rem 0;
+    padding: .5em 1em;
+    font-size: 1.1em;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: color .2s, border .2s;
+    transition: color .2s, border .2s;
+    text-transform: capitalize;
+    background: rgba(0, 0, 0, 0.07);
+}
+
+.share a::before {
+    margin-right: .5rem;
+    font-size: 1.2rem;
+}
+
+.share a:hover,
+.share a:focus,
+.share a:active {
+    text-decoration: none;
+}
+
+.share a:hover {
+    border-color: rgba(0, 0, 0, 0.3);
+    color: rgba(0, 0, 0, 0.75);
+}
+
+/*]]>*/</style>
+
+<b:skin><![CDATA[
+/*!
+=> Author: W3layouts
+=> Author URI: http://w3layouts.com
+=> License: Creative Commons Atribucion-NoComercial 4.0 Internacional
+=> License URI: http://creativecommons.org/licenses/by-nc/4.0/
+=> for blogger by: https://zkreations.com
+*/
+
+/*Deleted: unnecessary elements*/
+.singleton-element:not(.cookie-choices-info),
+.item-control.blog-admin,
+.widget-item-control{display: none;}
+
+/*Fix: Blogger lightbox*/
+.CSS_LIGHTBOX{z-index: 90001 !important;}
+
+/*Fix: Comment Editor*/
+#comment-editor{border: 0;width: 100%;min-height: 220px;}
+
+/*Fix: fb responsive hack ?= google plus hack */
+.fb-comments,.fb-comments iframe span[style],
+.fb-comments iframe[style],.fb-comments span,
+.fb-like-box,.fb-like-box iframe span[style],
+.fb-like-box iframe[style],.fb-like-box span,
+.cmt_iframe_holder, .cmt_iframe_holder > iframe {width:100%!important}
+
+/*Design: is Layout Mode*/
+body#layout .left{float: left;width: 50%;}
+body#layout .right{float: left;width: 33.333333%;}
+
+]]></b:skin>
+
+&lt;!--</head>--&gt;&lt;/head&gt;
+
+<body>
+<b:if cond='data:view.isError'>
+
+
+<div id='oopss'>
+<div id='error-text'>
+<span>404</span>
+<p>Page Not Found</p>
+<p><a class='back' href='/'>Homepage</a></p>
+</div>
+</div>
+
+   
+<b:else/>
+<div class='header'>
+
+<div class='header-top'>
+	<div class='container'>
+
+<b:section id='Header' maxwidgets='2' showaddelement='no'>
+  <b:widget id='Header1' locked='true' title='Business (cabecera)' type='Header' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='displayUrl'/>
+      <b:widget-setting name='displayHeight'>0</b:widget-setting>
+      <b:widget-setting name='sectionWidth'>-1</b:widget-setting>
+      <b:widget-setting name='useImage'>false</b:widget-setting>
+      <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+      <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
+      <b:widget-setting name='displayWidth'>0</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+			<div class='logo'>
+				<b:include expr:name='data:useImage ? &quot;logo&quot; : &quot;title&quot;'/>
+			</div>
+    		<b:include name='search'/>
+			</b:includable>
+    <b:includable id='description'>
+  <div class='descriptionwrapper'>
+    <p class='description'><span><data:description/></span></p>
+  </div>
+</b:includable>
+    <b:includable id='logo'>
+				<a expr:href='data:blog.homepageUrl' expr:title='data:title'>
+					<img expr:alt='data:title' expr:src='data:sourceUrl'/>
+				</a>
+			</b:includable>
+    <b:includable id='search'>
+			<div class='search'>
+			<form action='/search'>
+				<input name='q' onblur='if (this.value == &apos;&apos;) {this.value = &apos;Search&apos;;}' onfocus='this.value = &apos;&apos;;' type='text' value='Search'/>
+				<input type='submit' value=''/>
+			</form>
+			</div>
+			</b:includable>
+    <b:includable id='title'>
+				<a expr:href='data:blog.homepageUrl' expr:title='data:title'>
+					<h1><data:title/></h1>
+				</a>
+			</b:includable>
+  </b:widget>
+  <b:widget id='LinkList10' locked='true' title='Redes sociales' type='LinkList' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='link-5'>#url</b:widget-setting>
+      <b:widget-setting name='link-6'>#url</b:widget-setting>
+      <b:widget-setting name='link-3'>#url</b:widget-setting>
+      <b:widget-setting name='link-4'>#url</b:widget-setting>
+      <b:widget-setting name='text-1'>chrome</b:widget-setting>
+      <b:widget-setting name='text-0'>beh</b:widget-setting>
+      <b:widget-setting name='text-3'>in</b:widget-setting>
+      <b:widget-setting name='text-2'>facebook</b:widget-setting>
+      <b:widget-setting name='text-5'>vem</b:widget-setting>
+      <b:widget-setting name='text-4'>twitter</b:widget-setting>
+      <b:widget-setting name='text-6'>yout</b:widget-setting>
+      <b:widget-setting name='sorting'>ALPHABETICAL</b:widget-setting>
+      <b:widget-setting name='link-1'>chrome</b:widget-setting>
+      <b:widget-setting name='link-2'>#url</b:widget-setting>
+      <b:widget-setting name='link-0'>#url</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main' var='top'>
+			<div class='social'>
+				<ul>
+         		<b:loop values='data:links' var='link'>
+            		<li><a expr:class='&quot;facebook &quot; + data:link.name' expr:href='data:link.target'/></li>
+         		</b:loop>
+				</ul>
+			</div>
+      		</b:includable>
+  </b:widget>
+</b:section>
+
+	<div class='clearfix'/>
+	</div>
+</div>
+			
+<!--head-bottom-->
+<div class='head-bottom'>
+      <div class='container'>
+
+<b:section id='main menu' maxwidgets='1' showaddelement='no'>
+  <b:widget id='HTML1' locked='true' title='Menu principal' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>&lt;ul class=&quot;nav navbar-nav&quot;&gt;
+    &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/p/videos.html&quot;&gt;Videos&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/p/reviews.html&quot;&gt;Reviews&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=&quot;dropdown&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Tech &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;/p/tech.html&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;/p/tech.html&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;/p/tech.html&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;dropdown&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Culture &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;singlepage.html&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;singlepage.html&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;singlepage.html&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;dropdown&quot;&gt;
+        &lt;a href=&quot;#&quot; class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Science &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;ul class=&quot;dropdown-menu&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;singlepage.html&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;singlepage.html&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;singlepage.html&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/p/design.html&quot;&gt;Design&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/p/business.html&quot;&gt;Business&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/p/world.html&quot;&gt;World&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/p/forum.html&quot;&gt;Forum&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href=&quot;/p/contact.html&quot;&gt;Contact&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+        <div class='navbar-header'>
+          <button aria-controls='navbar' aria-expanded='false' class='navbar-toggle collapsed' data-target='#navbar' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'/>
+            <span class='icon-bar'/>
+            <span class='icon-bar'/>
+          </button>
+        </div>
+        <div class='navbar-collapse collapse' id='navbar'>
+			<data:content/>
+        </div><!--/.nav-collapse -->
+   </b:includable>
+  </b:widget>
+</b:section>
+
+      </div>
+</div>
+<!--head-bottom-->
+</div>
+
+
+<b:section cond='data:view.isMultipleItems' id='banner' maxwidgets='1' showaddelement='no'>
+  <b:widget id='FeaturedPost1' locked='false' title='Entrada destacada' type='FeaturedPost' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='showSnippet'>true</b:widget-setting>
+      <b:widget-setting name='showPostTitle'>true</b:widget-setting>
+      <b:widget-setting name='postId'>691667359235190208</b:widget-setting>
+      <b:widget-setting name='showFirstImage'>true</b:widget-setting>
+      <b:widget-setting name='useMostRecentPost'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+      <b:include name='content'/>
+   </b:includable>
+    <b:includable id='content'>
+	<div class='banner' expr:style='&quot;background-image: url(&quot; + data:postFirstImage + &quot;);&quot;'>
+	<div class='container'>
+		<h2><data:postTitle/></h2>
+		<p><data:postSummary/></p>
+		<a expr:href='data:postUrl'>READ ARTICLE</a>
+	</div>
+      </div>
+</b:includable>
+  </b:widget>
+</b:section>
+
+<b:if cond='data:view.isPost'>
+<div class='banner1' expr:style='&quot;background-image: url(&quot; + data:blog.postImageUrl + &quot;);&quot;'/>
+<b:elseif cond='data:view.isPage'/>
+<div class='banner1'/>
+</b:if>
+
+
+<!-- technology -->
+<div class=''>
+  <b:class expr:name='data:view.isHomepage ? &quot;technology&quot; : &quot;technology-1&quot;'/>
+
+	<div class='container'>
+		<div class='col-md-9 technology-left left'>
+
+<!-- Entradas -->
+<b:section id='Blog'>
+  <b:widget id='Blog1' locked='true' title='Entradas del blog' type='Blog' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='showDateHeader'>true</b:widget-setting>
+      <b:widget-setting name='style.textcolor'>#000000</b:widget-setting>
+      <b:widget-setting name='showShareButtons'>true</b:widget-setting>
+      <b:widget-setting name='showCommentLink'>true</b:widget-setting>
+      <b:widget-setting name='style.urlcolor'>#008000</b:widget-setting>
+      <b:widget-setting name='showAuthor'>true</b:widget-setting>
+      <b:widget-setting name='disableGooglePlusShare'>true</b:widget-setting>
+      <b:widget-setting name='style.linkcolor'>#0000ff</b:widget-setting>
+      <b:widget-setting name='style.unittype'>TextAndImage</b:widget-setting>
+      <b:widget-setting name='style.bgcolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='showAuthorProfile'>false</b:widget-setting>
+      <b:widget-setting name='style.layout'>1x1</b:widget-setting>
+      <b:widget-setting name='showLabels'>true</b:widget-setting>
+      <b:widget-setting name='showLocation'>true</b:widget-setting>
+      <b:widget-setting name='showTimestamp'>true</b:widget-setting>
+      <b:widget-setting name='postsPerAd'>1</b:widget-setting>
+      <b:widget-setting name='showBacklinks'>false</b:widget-setting>
+      <b:widget-setting name='style.bordercolor'>#ffffff</b:widget-setting>
+      <b:widget-setting name='showInlineAds'>false</b:widget-setting>
+      <b:widget-setting name='showReactions'>false</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main' var='top'>
+
+   <b:if cond='data:view.isMultipleItems'>
+	<div class=''>
+	<b:class expr:name='data:view.isSearch ? &quot;business&quot; : &quot;tech-no&quot;'/>
+
+	<b:if cond='data:numPosts == 0'>
+		<div class='no-entrys'>
+			<p class='info'><b:if cond='data:blog.searchQuery'>No hay entradas con esos términos de búsqueda<b:else/>Este blog aún no tiene entradas</b:if></p>
+		</div>
+	<b:else/>
+
+      <b:loop values='data:posts' var='post'>
+         <b:include data='post' name='post'/><!-- insertamos entradas -->
+      </b:loop>
+      <b:include name='nextprev'/>
+	</b:if>
+
+     </div>
+
+   <b:else/>
+	<b:tag class='business' cond='data:view.isPost' name='div'>
+
+      <b:loop values='data:posts' var='post'>
+		<b:include data='post' name='post'/><!-- insertamos entradas -->
+		<div class='comment-top'>
+         <!-- insertamos comentarios -->
+		<b:if cond='data:view.isPost'>
+         <b:with value='[&quot;blogger&quot;,&quot;Shortname&quot;,&quot;10&quot;]' var='commentsType'><!-- Elige entre facebook, disqus o blogger -->
+            <b:include data='post' expr:name='data:view.isPreview ? &quot;comment_status&quot; : (data:post.allowComments ? &quot;comment-&quot; + data:commentsType[0] : &quot;comment_status&quot;)'/>
+            <noscript><p class='info'>Los comentarios requieren javascript</p></noscript>
+         </b:with>
+		</b:if>
+        </div>
+      </b:loop>
+
+     </b:tag>
+   </b:if>
+
+    </b:includable>
+    <b:includable id='backlinkDeleteIcon' var='backlink'><!--none--></b:includable>
+    <b:includable id='backlinks' var='post'><!--none--></b:includable>
+    <b:includable id='comment-blogger' var='post'>
+      <b:if cond='data:post.commentSource == 1'>
+         <b:include data='post' name='iframe_comments'/>
+      <b:else/>
+      <h2><data:post.numComments/> Comentario<b:if cond='data:post.numComments neq 1'>s</b:if></h2> 
+      <div class='comments' id='comments'>
+         <div class='comments-content'>
+            <div id='comment-holder'><data:post.commentHtml/></div>
+            <b:include data='post' name='threaded_comment_js'/>
+         </div>
+         <b:include data='post' expr:name='data:post.allowNewComments ? &quot;threaded-comment-form&quot; : &quot;comment_status&quot;'/>
+      </div>
+      </b:if>
+   </b:includable>
+    <b:includable id='comment-disqus'>
+      <h2>Disqus</h2>
+      <div id='disqus_thread'/>
+      <script type='text/javascript'>
+         var disqus_url = &quot;<data:blog.url.canonical/>&quot;,
+         disqus_shortname = &quot;<b:eval expr='data:commentsType[1]'/>&quot;;//<![CDATA[
+         (function() {var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+         })();//]]>
+      </script>
+   </b:includable>
+    <b:includable id='comment-facebook'>
+		<h2>Facebook</h2>
+      <div class='fb-comments' expr:data-href='data:blog.url.canonical' expr:data-numposts='data:commentsType[2]'/>
+   </b:includable>
+    <b:includable id='comment-form' var='post'><!--none--></b:includable>
+    <b:includable id='commentDeleteIcon' var='comment'><!--none--></b:includable>
+    <b:includable id='comment_count_picker' var='post'><!--none--></b:includable>
+    <b:includable id='comment_picker' var='post'><!--none--></b:includable>
+    <b:includable id='comment_status'>
+      <p class='info'><b:eval expr='data:view.isPreview ? &quot;No disponible&quot; : &quot;No se permiten nuevos comentarios&quot;'/></p>
+   </b:includable>
+    <b:includable id='comments' var='post'><!--none--></b:includable>
+    <b:includable id='feedLinks'><!--none--></b:includable>
+    <b:includable id='feedLinksBody' var='links'><!--none--></b:includable>
+    <b:includable id='iframe_comments' var='post'>
+      <script expr:src='data:post.iframeCommentSrc' type='text/javascript'/>
+      <div class='cmt_iframe_holder' expr:data-href='data:post.url.canonical' expr:data-viewtype='data:post.viewType'/>
+   </b:includable>
+    <b:includable id='mobile-index-post' var='post'><!--none--></b:includable>
+    <b:includable id='mobile-main' var='top'><!--none--></b:includable>
+    <b:includable id='mobile-nextprev'><!--none--></b:includable>
+    <b:includable id='mobile-post' var='post'><!--none--></b:includable>
+    <b:includable id='nextprev'>
+      <div class='blog-pager' id='blog-pager'>
+         <b:if cond='data:newerPageUrl'><a class='newer-link' expr:href='data:newerPageUrl' expr:title='data:newerPageTitle'>Anterior</a></b:if>
+         <b:if cond='data:olderPageUrl'><a class='older-link' expr:href='data:olderPageUrl' expr:title='data:olderPageTitle'>Siguiente</a></b:if>
+      </div>
+   </b:includable>
+    <b:includable id='post' var='post'>
+    
+      <b:if cond='data:view.isMultipleItems'>
+
+		<b:if cond='!data:view.isSearch'>
+        	<b:include name='shareButtons'/>
+			 <div class='tc-ch'>
+				
+					<div class='tch-img'>
+						<a expr:href='data:post.url.canonical'><img class='img-responsive' expr:alt='data:post.title' expr:src='data:post.firstImageUrl'/></a>
+					</div>
+					
+					<b:loop values='data:post.labels limit 1' var='label'>
+						<a class='blog blue' expr:href='data:label.url'><data:label.name/></a>
+					</b:loop>
+
+               		<h3><a expr:href='data:post.url'><data:post.title/></a></h3>
+               		<p><b:eval expr='data:post.longSnippet snippet {length: 480}'/></p>
+					
+						<div class='blog-poast-info'>
+							<ul>
+                              <li><i class='glyphicon glyphicon-user'> </i><a class='admin' expr:href='data:post.authorProfileUrl'><data:post.author/></a></li>
+                              <li><i class='glyphicon glyphicon-calendar'> </i><data:post.timestamp/></li>
+                              <li><i class='glyphicon glyphicon-comment'> </i><a class='p-blog' expr:href='data:post.url + &quot;#comment&quot;'><data:post.numComments/> Comments </a></li>
+							</ul>
+						</div>
+			</div>
+			<div class='clearfix'/>
+      	<b:else/>
+
+			<div class='rev-1'>
+     			<div class='rev-img'>
+      				<a expr:href='data:post.url.canonical'><img class='img-responsive' expr:alt='data:post.title' expr:src='data:post.firstImageUrl'/></a>
+     			</div>
+     			<div class='rev-info'>
+               		<h3><a expr:href='data:post.url'><data:post.title/></a></h3>
+               		<p><b:eval expr='data:post.longSnippet snippet {length: 150}'/></p>
+     			</div>
+     			<div class='clearfix'/>
+    		</div>
+
+		</b:if>
+
+      <b:elseif cond='data:view.isPost'/>
+		<div class='blog-grid2'>
+		<div class='blog-text post-body' expr:data-id='data:post.id'>
+			<data:post.body/>
+		<b:include name='shareButtons'/>			
+		</div>
+</div>
+
+      <b:elseif cond='data:view.isPage'/>
+      		<data:post.body/>
+      </b:if>
+
+   </b:includable>
+    <b:includable id='postQuickEdit' var='post'><!--none--></b:includable>
+    <b:includable id='shareButtons'>
+	<b:if cond='data:view.isMultipleItems'>
+		<div class='soci'>
+			<ul>
+				<li><a class='facebook-1' expr:href='&quot;https://twitter.com/intent/tweet?url=&quot; + data:post.url' target='_blank'> </a></li>
+				<li><a class='facebook-1 twitter' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:post.url' target='_blank'> </a></li>
+				<li><a class='facebook-1 chrome' expr:href='&quot;https://www.facebook.com/sharer/sharer.php?u=&quot; + data:post.url' target='_blank'> </a></li>
+				<b:if cond='data:top.showEmailButton'>
+					<li><a expr:href='data:post.sharePostUrl + &quot;&amp;target=email&quot;' target='_blank'><i class='glyphicon glyphicon-envelope'> </i></a></li>
+      			</b:if>
+				<li><a href='javascript:window.print(); void 0;'><i class='glyphicon glyphicon-print'> </i></a></li>
+				<li><a href='#'><i class='glyphicon glyphicon-plus'> </i></a></li>
+			</ul>
+		</div>
+  	<b:else/>
+		<div class='share clearfix'>
+            <a class='flex align-items-center' expr:href='&quot;https://www.facebook.com/sharer/sharer.php?u=&quot; + data:post.url'><i class='fa fa-facebook'/> facebook</a>
+            <a class='flex align-items-center' expr:href='&quot;https://twitter.com/intent/tweet?url=&quot; + data:post.url'><i class='fa fa-twitter'/> twitter</a>
+            <a class='flex align-items-center' expr:href='&quot;https://plus.google.com/share?url=&quot; + data:post.url'><i class='fa fa-google'/> google</a>
+            <a class='flex align-items-center' expr:href='&quot;https://www.tumblr.com/share/photo?url=&quot; + data:post.firstImageUrl + &quot;&amp;caption=&quot; + data:post.url'><i class='fa fa-tumblr'/> tumblr</a>
+            <a class='flex align-items-center' expr:href='&quot;https://pinterest.com/pin/create/button/?url=&quot; + data:post.url + &quot;&amp;media=&quot; + data:post.firstImageUrl'><i class='fa fa-pinterest'/> pinterest</a>
+		</div>
+	</b:if>
+
+</b:includable>
+    <b:includable id='status-message'><!--none--></b:includable>
+    <b:includable id='threaded-comment-form' var='post'>
+      <div class='comment-form'><a expr:href='data:post.commentFormIframeSrc' id='comment-editor-src'/>
+         <iframe class='blogger-iframe-colorize blogger-comment-from-post' id='comment-editor' src=''/>
+         <data:post.cmtfpIframe/><script type='text/javascript'>BLOG_CMT_createIframe(&quot;<data:post.appRpcRelayPath/>&quot;);</script>
+      </div>
+   </b:includable>
+    <b:includable id='threaded_comment_js' var='post'>
+      <script async='async' expr:src='data:post.commentSrc' type='text/javascript'/><b:template-script inline='true' name='threaded_comments'/>
+      <script type='text/javascript'>blogger.widgets.blog.initThreadedComments(<data:post.commentJso/>,<data:post.commentMsgs/>,<data:post.commentConfig/>);/*<![CDATA[*/var a=document.getElementsByClassName("avatar-image-container");for(i=0;i<a.length;i++)a[i].childNodes[0].setAttribute("src",a[i].childNodes[0].getAttribute("src").replace(/s\B\d{2,4}/,"s120-c"));//]]></script>
+   </b:includable>
+    <b:includable id='threaded_comments' var='post'><!--none--></b:includable>
+  </b:widget>
+</b:section>
+	</div>
+
+
+
+		<!-- technology-right -->
+		<div class='col-md-3 technology-right left'>
+          <b:section id='sidebar'>
+            <b:widget id='Image1' locked='false' title='Banner' type='Image' version='1'>
+              <b:widget-settings>
+                <b:widget-setting name='displayUrl'>http://2.bp.blogspot.com/-INLkgoVmz1c/WcBNYTvmPzI/AAAAAAAAD38/OCD5ulBgR9ci00tx00xss1HpAsYUava5wCK4BGAYYCw/s1600/banner-1.jpg</b:widget-setting>
+                <b:widget-setting name='displayHeight'>853</b:widget-setting>
+                <b:widget-setting name='sectionWidth'>391</b:widget-setting>
+                <b:widget-setting name='shrinkToFit'>false</b:widget-setting>
+                <b:widget-setting name='displayWidth'>1280</b:widget-setting>
+                <b:widget-setting name='link'>#url</b:widget-setting>
+                <b:widget-setting name='caption'>Foto</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+				<div class='blo-top'>
+					<div class='tech-btm'>
+						<img class='img-responsive' expr:alt='data:caption' expr:src='data:sourceUrl'/>
+					</div>
+				</div>
+   				</b:includable>
+            </b:widget>
+            <b:widget id='FollowByEmail1' locked='false' title='Sign up to our newsletter' type='FollowByEmail' version='1'>
+              <b:includable id='main'>
+			<div class='blo-top'>
+				<div class='tech-btm'>
+                  <h4><data:title/></h4>
+					<p>Pellentesque dui, non felis. Maecenas male</p>
+					<form action='https://feedburner.google.com/fb/a/mailverify' expr:onsubmit='&quot;window.open(\&quot;https://feedburner.google.com/fb/a/mailverify?uri=&quot; + data:feedPath + &quot;\&quot;, \&quot;popupwindow\&quot;, \&quot;scrollbars=yes,width=550,height=520\&quot;); return true&quot;' method='post' target='popupwindow'>
+						<div class='name'>
+							
+                              <input class='follow-by-email-address' name='email' placeholder='Email address...' type='text'/>
+
+						</div>	
+						<div class='button'>
+                              <input type='submit' value='Subscribe'/>
+						</div>
+							</form>
+                  		<div class='clearfix'/>
+					</div></div>
+				</b:includable>
+            </b:widget>
+            <b:widget id='PopularPosts10' locked='false' title='Top stories of the week' type='PopularPosts' version='1'>
+              <b:widget-settings>
+                <b:widget-setting name='numItemsToShow'>10</b:widget-setting>
+                <b:widget-setting name='showThumbnails'>true</b:widget-setting>
+                <b:widget-setting name='showSnippets'>true</b:widget-setting>
+                <b:widget-setting name='timeRange'>LAST_YEAR</b:widget-setting>
+              </b:widget-settings>
+              <b:includable id='main'>
+				<div class='blo-top1'>
+					<div class='tech-btm'>
+					<h4><data:title/></h4>
+      				<b:loop values='data:posts' var='post'>
+						<div class='blog-grids'>
+							<div class='blog-grid-left'>
+								<a expr:href='data:post.href'><img class='img-responsive' expr:alt='data:post.title' expr:src='data:post.thumbnail resizeImage 85 resizeImage &quot;1:1&quot;'/></a>
+							</div>
+							<div class='blog-grid-right'>
+								<h5><a expr:href='data:post.href'><data:post.title/></a> </h5>
+							</div>
+							<div class='clearfix'/>
+						</div>
+      				</b:loop>
+					</div>
+				</div>
+   				</b:includable>
+            </b:widget>
+          </b:section>
+
+		
+		</div>
+		<div class='clearfix'/>
+	</div>
+</div>
+
+
+<!-- footer -->
+<div class='footer'>
+<div class='container'>
+<div class='col-md-4 footer-left right'>	
+<b:section id='footer-left' maxwidgets='1' showaddelement='no'>
+  <b:widget id='HTML2' locked='true' title='THIS LOOKS GREAT' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt&lt;/p&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt consectetur adipisicing elit,&lt;/p&gt;</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+    	<h6><data:title/></h6>
+    	<data:content/>
+	</b:includable>
+  </b:widget>
+</b:section>
+</div>
+
+<div class='col-md-4 footer-middle right'>
+<b:section id='footer-middle' maxwidgets='1' showaddelement='no'>
+  <b:widget id='HTML3' locked='true' title='Twitter Feed' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>&lt;div class=&#39;mid-btm&#39;&gt;
+   &lt;p&gt;Consectetur adipisicing&lt;/p&gt;
+   &lt;p&gt;Sed do eiusmod tempor&lt;/p&gt;
+   &lt;a href=&#39;https://w3layouts.com/&#39;&gt;https://w3layouts.com/&lt;/a&gt;
+&lt;/div&gt;
+			
+&lt;p&gt;Consectetur adipisicing&lt;/p&gt;
+&lt;p&gt;Sed do eiusmod tempor&lt;/p&gt;
+&lt;a href=&#39;https://w3layouts.com/&#39;&gt;https://w3layouts.com/&lt;/a&gt;</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+    	<h4><data:title/></h4>
+    	<data:content/>
+	</b:includable>
+  </b:widget>
+</b:section>
+</div>
+
+<div class='col-md-4 footer-right right'>
+<b:section id='footer-right' maxwidgets='1' showaddelement='no'>
+  <b:widget id='HTML4' locked='true' title='Quick Link' type='HTML' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='content'>&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Eiusmod tempor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Consectetur &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Adipisicing elit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Eiusmod tempor&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Consectetur &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#39;#&#39;&gt;Adipisicing elit&lt;/a&gt;&lt;/li&gt;</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main'>
+    	<h4><data:title/></h4>
+    	<data:content/>
+	</b:includable>
+  </b:widget>
+</b:section>
+</div>
+
+<div class='clearfix'/>
+</div>
+</div>
+
+
+	<div class='foot-nav'>
+	<div class='container'>
+
+<b:section id='foot-nav' maxwidgets='1' showaddelement='no'>
+  <b:widget id='LinkList11' locked='true' title='Enlaces del footer' type='LinkList' version='1'>
+    <b:widget-settings>
+      <b:widget-setting name='text-8'>Contácto </b:widget-setting>
+      <b:widget-setting name='link-7'>#</b:widget-setting>
+      <b:widget-setting name='link-8'>#</b:widget-setting>
+      <b:widget-setting name='link-5'>#url</b:widget-setting>
+      <b:widget-setting name='link-6'>#url</b:widget-setting>
+      <b:widget-setting name='link-3'>#url</b:widget-setting>
+      <b:widget-setting name='link-4'>#url</b:widget-setting>
+      <b:widget-setting name='text-1'>Science</b:widget-setting>
+      <b:widget-setting name='text-0'>Design</b:widget-setting>
+      <b:widget-setting name='text-3'>Tech</b:widget-setting>
+      <b:widget-setting name='text-2'>Culture</b:widget-setting>
+      <b:widget-setting name='text-5'>Videos</b:widget-setting>
+      <b:widget-setting name='text-4'>Reviews</b:widget-setting>
+      <b:widget-setting name='text-7'>Indice</b:widget-setting>
+      <b:widget-setting name='text-6'>Home</b:widget-setting>
+      <b:widget-setting name='sorting'>NONE</b:widget-setting>
+      <b:widget-setting name='link-1'>#url</b:widget-setting>
+      <b:widget-setting name='link-2'>#url</b:widget-setting>
+      <b:widget-setting name='link-0'>#url</b:widget-setting>
+    </b:widget-settings>
+    <b:includable id='main' var='top'>
+		<ul>
+			<b:loop values='data:links' var='link'>
+              <li><a expr:href='data:link.target'><data:link.name/></a></li>
+			</b:loop>
+			<div class='clearfix'/>
+		</ul>
+	</b:includable>
+  </b:widget>
+</b:section>
+
+		</div>
+	</div>
+<!-- footer-
+bottom -->
+<div class='copyright'>
+	<div class='container'>
+      <p>&#169; <script type='text/javascript'>
+copyright=new Date();
+update=copyright.getFullYear();
+document.write(&quot;&quot; + update + &quot; &quot; + &quot; &quot;);
+</script> <data:blog.title/>. All rights reserved | Template by <a href='https://www.tutorialblogger.org/'>TutorialBlogger</a> &amp; <a href='http://w3layouts.com/' rel='nofollow noopener noreferrer' target='_blank'>W3layouts</a></p>
+     
+      
+	</div>
+</div>
+</b:if>
+
+<script>
+//<![CDATA[
+$(document).ready(function() {
+    $("#flippy").click(function() {
+        $("#flippanel").slideToggle("normal");
+    });
+});
+//]]></script>
+
+<!-- Google Analytics -->
+<b:include data='blog' name='google-analytics'/>
+&lt;!--</body>--&gt;&lt;/body&gt;
+</html>
